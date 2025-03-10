@@ -2,12 +2,12 @@
   "stats": {
     "suites": 4,
     "tests": 6,
-    "passes": 6,
+    "passes": 5,
     "pending": 0,
-    "failures": 0,
-    "start": "2025-03-09T07:32:34.222Z",
-    "end": "2025-03-09T07:32:34.631Z",
-    "duration": 409
+    "failures": 1,
+    "start": "2025-03-10T08:52:53.591Z",
+    "end": "2025-03-10T08:52:54.181Z",
+    "duration": 590
   },
   "tests": [
     {
@@ -20,7 +20,7 @@
     {
       "title": "is defined as a const",
       "fullTitle": "index.js companyName is defined as a const",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -34,14 +34,19 @@
     {
       "title": "is defined using let",
       "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
-      "duration": 0,
+      "duration": 3,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "Expected mostProfitableNeighborhood to be defined using let: expected 'const companyName = \"Scuber\";\\n\\nconst mostProfitableNeighborhood = \"Chelsea\";\\n\\nlet companyCeo = \"Susan Smith\";\\n\\n' to match /let mostProfitableNeighborhood/",
+        "showDiff": false,
+        "actual": "const companyName = \"Scuber\";\n\nconst mostProfitableNeighborhood = \"Chelsea\";\n\nlet companyCeo = \"Susan Smith\";\n\n",
+        "stack": "AssertionError: Expected mostProfitableNeighborhood to be defined using let: expected 'const companyName = \"Scuber\";\\n\\nconst mostProfitableNeighborhood = \"Chelsea\";\\n\\nlet companyCeo = \"Susan Smith\";\\n\\n' to match /let mostProfitableNeighborhood/\n    at Context.<anonymous> (test/indexTest.js:25:21)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
     },
     {
       "title": "is declared as equal to Susan Smith",
       "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -54,7 +59,20 @@
     }
   ],
   "pending": [],
-  "failures": [],
+  "failures": [
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected mostProfitableNeighborhood to be defined using let: expected 'const companyName = \"Scuber\";\\n\\nconst mostProfitableNeighborhood = \"Chelsea\";\\n\\nlet companyCeo = \"Susan Smith\";\\n\\n' to match /let mostProfitableNeighborhood/",
+        "showDiff": false,
+        "actual": "const companyName = \"Scuber\";\n\nconst mostProfitableNeighborhood = \"Chelsea\";\n\nlet companyCeo = \"Susan Smith\";\n\n",
+        "stack": "AssertionError: Expected mostProfitableNeighborhood to be defined using let: expected 'const companyName = \"Scuber\";\\n\\nconst mostProfitableNeighborhood = \"Chelsea\";\\n\\nlet companyCeo = \"Susan Smith\";\\n\\n' to match /let mostProfitableNeighborhood/\n    at Context.<anonymous> (test/indexTest.js:25:21)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    }
+  ],
   "passes": [
     {
       "title": "is set as Scuber",
@@ -66,7 +84,7 @@
     {
       "title": "is defined as a const",
       "fullTitle": "index.js companyName is defined as a const",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -78,16 +96,9 @@
       "err": {}
     },
     {
-      "title": "is defined using let",
-      "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
       "title": "is declared as equal to Susan Smith",
       "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
